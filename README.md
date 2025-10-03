@@ -27,8 +27,11 @@ public;
   
 };
 
+
+//Función insertar al inicio
+
 template <typename T>
-void inserta_al_inicio(Nodo<T>** cabeza, T dato) {
+void inserInicio(Nodo<T>** cabeza, T dato) {
     Nodo<T>* nuevo = new Nodo<T>(dato);
     nuevo->setNext(*cabeza);
     *cabeza = nuevo;
